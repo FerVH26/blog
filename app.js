@@ -1,4 +1,5 @@
 var createError = require('http-errors');
+var bodyParser = require('body-parser')
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -9,6 +10,8 @@ var debug = require('debug')('blog:database');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // Conect to database
 
@@ -42,6 +45,16 @@ app.use(sassMiddleware({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+/*app.get('/users',urlencodedParser, function(req, res){
+  console.log(req.body);
+  res.send('/users',{qs:req.query})
+})*/
+
+/*pp.post('/users',urlencodedParser, function(req, res){
+    console.log(req.body);
+    res.render('/users',{qs:req.query})
+})*/
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

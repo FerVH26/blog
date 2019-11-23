@@ -18,12 +18,9 @@ var UserSchema = Schema({
     } ,
     descripcion: {
         type: String,
-        required: true
+        required: false
     },
-    terminada: {
-        type: Boolean,
-        required: true
-    },
+    terminada:Boolean,
     login_count: Number
 }, {
     timestamps: true

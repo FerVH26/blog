@@ -4,6 +4,7 @@ body {
     background-image: url('../../images/1534.jpg');
     font-family: 'Gruppo', cursive;
     height: 100vh;
+    color: #ffffff;
   }
 html{
     height: 100vh;
@@ -26,7 +27,7 @@ header{
     text-align: center;
     color:#ffffff;
     background-color: #E3170A;
-    height: 10vh;
+    height: 15vh;
 }
 label{
     color: #ffffff;
