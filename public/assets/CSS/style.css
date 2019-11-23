@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo&display=swap');
+
+body {
+    background-image: url('../../images/1534.jpg');
+    font-family: 'Gruppo', cursive;
+    height: 100vh;
+  }
+html{
+    height: 100vh;
+}
+.Formulario{
+    width: 50%;
+    height: auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color:#ffffff;
+    background-color: #E3170A;
+    height: 10vh;
+}
+label{
+    color: #ffffff;
+}
+form{
+    margin-top: 10%;
+    background-color: #273043;
+    padding: 10px;
+    border-radius: 5%;
+}

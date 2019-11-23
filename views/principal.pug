@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    header
+        h1 RESTFUL API ANIME
+    div(class="container")  
+        div(class='Formulario')
+                form(method ="post" action ="signin" name="signin" id="signin")
+                    div(class="form-group")
+                        label(for="nombre" class="form") Nombre del anime:
+                        input#user(type="text", name="nombre",class="form-control")
+                    div(class="form-group")
+                        label(for="nombre" class="form") Genero del anime:
+                        input#user(type="text", name="nombre",class="form-control")
+                    div(class="form-group")
+                        label(for="nombre" class="form") Temporadas:
+                        input#user(type="text", name="nombre",class="form-control")
+                    div(class="form-group")
+                        label(for="nombre" class="form") Capitulos:
+                        input#user(type="text", name="nombre",class="form-control")
+                    div(class="form-group")
+                        label( for="exampleFormControlTextarea1") Descripcion:
+                        textarea(class="form-control" id="exampleFormControlTextarea1" rows="3")
+                    div(class="form-check")
+                        input(class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" )      
+                        label(class="form-check-label" for="exampleRadios1") Terminado
+                    input(id="boton" type="submit" value="registrar")    
+
